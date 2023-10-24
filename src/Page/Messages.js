@@ -11,7 +11,11 @@ export default function Messages() {
          , []) ;
 
     const fetch1 =async ()=>{
-        const url = "http://localhost:5000/api/message/get"
+        // const url = "http://localhost:5000/api/message/get"
+        
+        const url = "https://sc-backend1.onrender.com/api/message/get"
+
+
        const data1   = await axios.get(url) ;
        console.log(data1);
        setdata(data1.data) ;
