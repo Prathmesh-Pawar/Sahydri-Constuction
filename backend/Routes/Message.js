@@ -7,8 +7,7 @@ const router = express.Router();
 router.get("/get" , async(req ,res)=>{
     try{
         console.log("rejv") ;
-        // const arr = await Message.find() ;
-        const arr = [] ;
+        const arr = await Message.find() ;
     const arr1 = JSON.stringify(arr) ;
     res.send(arr1) ;
     }catch(error)
