@@ -1,38 +1,98 @@
-.App {
+/* CSS */
+*{
+  margin: 0;
+  padding: 0;
+ 
+}
+.button-28 {
+  appearance: none;
+  background-color: white;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 0;
+  min-width: 0;
+  outline: none;
+  padding: 10px 16px;
   text-align: center;
+  text-decoration: none ;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1) ;
+  user-select: none ;
+  -webkit-user-select: none ;
+  touch-action: manipulation ;
+  will-change: transform ;
 }
 
-.App-logo {
-  height: 40vmin;
+.button-28:disabled {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-28:hover {
+  color: #fff;
+  background-color: rgb(249, 115,);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+.mlx{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+::-webkit-scrollbar {
+  width: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+#menu-t:checked + #menu  {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;  
+}
+#menu-t:checked + #menu li  {
+  margin-top: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width : 768px)
+{
+  .fo1{
+    font-size:3.5rem;
   }
-  to {
-    transform: rotate(360deg);
+ 
+  .fo2{
+    font-size:small;
+
+    padding-left: 5px;
   }
+  .mlx{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .wf1{
+    width: 94vw;
+  }
+  .len{
+    height: 80px;
+  }
+
+  .len2{
+    height: 100vh;
+    object-fit:cover;
+  }
+ 
 }
