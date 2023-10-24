@@ -8,8 +8,9 @@ router.get("/get" , async(req ,res)=>{
     try{
         console.log("rejv") ;
         // const arr = await Message.find() ;
+        const arr = [] ;
     const arr1 = JSON.stringify(arr) ;
-    res.status(200).send(arr1) ;
+    res.send(arr1) ;
     }catch(error)
     {
         res.status(500).send({Error:"Internal Server Error" , error}) ;
