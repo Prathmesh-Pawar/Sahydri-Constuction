@@ -4,6 +4,8 @@ import axios from "axios"
 export default function Messages() {
 
     const[data ,setdata] = useState([]) ;
+    const[password , setpassword] = useState() ;
+    const [pass, setpass] = useState(false) ;
     useEffect(
         ()=>{
             fetch1()
@@ -20,9 +22,27 @@ export default function Messages() {
        console.log(data1);
        setdata(data1.data) ;
 }
+const inhand = ()=>{
+    if(password==="12345")
+    {
+        setpass(true) ;
+    }else{
+        setpass(false) ;
+    }
+}
+const onch = (e)=>{
+    setpassword(e.target.value) ;
+}
   return (
     <div >
-        <table className='w-full border-5'>
+        
+        
+        {!pass ?<div>
+            <label htmlFor="in">Enter Password</label>
+            <input onChange={onch} name='password' value={password} className='bg-red-300' type="text" id="in"/>
+            <button className='' onClick={inhand}>Submit</button>
+        </div>:
+         <table className=' w-full border-5'>
             <tr className=''>
                 <th>Name</th>
                 <th>Email</th>
@@ -40,7 +60,7 @@ export default function Messages() {
             </tr>
             })
         }
-        </table>
+        </table> }
     </div>
   )
 }

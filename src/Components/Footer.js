@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -17,6 +18,7 @@ export default function Footer() {
 
     </div>
     <div className='bg-slate-400 text-center'>
+      <p className='inline float-right'><Link to="/admin">admin</Link></p>
   Developed By Prathmesh By &#10084;
 </div>
     </div>

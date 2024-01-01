@@ -8,7 +8,7 @@ export default function Contact() {
 
   const insethandler = async (e)=>{
     e.preventDefault() ;
-    const url = "http://localhost:5000/api/message/insert" ;
+    const url = "https://sc-backend1.onrender.com/api/message/insert"
     const data1 = await axios.post(url,{
      name : data.name , email : data.email , phone:data.phone , message : data.message
     }, {

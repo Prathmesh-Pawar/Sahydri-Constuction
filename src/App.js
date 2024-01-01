@@ -25,7 +25,7 @@ export default function App() {
           <Footer/>
           </>
         }/>
-        <Route path='/message' element={ <Messages/>}/>
+        <Route path='/admin' element={ <Messages/>}/>
       </Routes>
 
     </div>
