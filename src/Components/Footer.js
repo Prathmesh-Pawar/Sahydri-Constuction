@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
+<<<<<<< HEAD
+    <div className='bg-black py-4 text-white text-center my-auto'>
+      Copyright@2023 Bailgada.com
+=======
     
     <div id='footer' className=' bg-black  text-white text-center my-auto'>
       <div className='py-4'>
@@ -21,6 +25,7 @@ export default function Footer() {
       <p className='inline float-right'><Link to="/admin">admin</Link></p>
   Developed By Prathmesh By &#10084;
 </div>
+>>>>>>> 091138055e5912d19d41d0ac554afad795cd9fdf
     </div>
   )
 }

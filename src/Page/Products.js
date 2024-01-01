@@ -1,4 +1,23 @@
 import React from 'react'
+<<<<<<< HEAD
+import Product from '../Components/Product'
+export default function Products() {
+    const arr = [1 ,2,3,4,5,6,6,7]
+
+  return (
+    <div className='bg-slate-300'> 
+
+      <h1 className='text-center text-green-500 bg-slate-500 p-3 font-extrabold text-5xl' >Products</h1>
+      <div className='flex flex-wrap gap-5'>
+        {
+            arr.map(()=>{
+                return (<div>
+                    <Product/>
+                </div>)
+            })
+        }
+        </div>
+=======
 import chira from "../Images/ch.png"
 
 export default function Products() {
@@ -45,6 +64,7 @@ export default function Products() {
         </div>
       </div>
       </div>
+>>>>>>> 091138055e5912d19d41d0ac554afad795cd9fdf
     </div>
   )
 }

@@ -2,7 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+<<<<<<< HEAD
+=======
 import reportWebVitals from './reportWebVitals';
+>>>>>>> 091138055e5912d19d41d0ac554afad795cd9fdf
 import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,12 +13,10 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <App />
+<<<<<<< HEAD
+=======
 
+>>>>>>> 091138055e5912d19d41d0ac554afad795cd9fdf
     </BrowserRouter>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
